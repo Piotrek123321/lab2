@@ -5,8 +5,8 @@ function handleHome() {
   return renderHome();
 }
 
-function handleStudent() {
-  return renderStudent();
+function handleStudent(data) {
+  return renderStudent(data);
 }
 
 module.exports = { handleHome, handleStudent };

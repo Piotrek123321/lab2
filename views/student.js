@@ -1,4 +1,4 @@
-function renderPage() {
+function renderPage(data) {
     return `<html lang="pl">
     <head>
       <meta charset="UTF-8">
@@ -6,8 +6,10 @@ function renderPage() {
       <title>student.js</title>
     </head>
     <body>
-      <div>student.js</div>
+      <h1>Student profile</h1>
+      ${data.map((el) => `<p>${el}</p>`).join("")}
     </body>
     </html>`;
   }
+  
   module.exports = renderPage;
